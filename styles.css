@@ -55,6 +55,7 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+    transition: 0.4s;
 }
 
 h1,
@@ -77,6 +78,10 @@ img {
     height: auto;
 }
 
+a {
+    color: inherit;
+}
+
 body.dark-theme {
     --bg-color: hsl(220, 18%, 13%);
     --bg-color-light: hsl(220, 18%, 23%);
@@ -90,6 +95,31 @@ body.dark-theme {
     color: var(--title-color);
     font-size: 1.125rem;
     cursor: pointer;
+}
+
+.dark-theme .scroll-header{
+    box-shadow: 0 2px 8px hsla(220, 18%, 8%, 0.3);
+}
+
+.dark-theme .nav__menu {
+    background-color: var(--container-color);
+}
+
+.dark-theme .nav__menu,
+.dark-theme .scrollUp {
+    box-shadow: 0 4px 8px hsla(220, 18%, 8%, 0.3);
+}
+
+.dark-theme::-webkit-scrollbar {
+    background-color: hsl(220, 18%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+    background-color: hsl(220, 18%, 25%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(220, 18%, 35%);
 }
 
 .container {
@@ -151,6 +181,7 @@ body.dark-theme {
         margin: 0 auto;
         padding: 1.25rem 2.8rem;
         border-radius: 0.5rem;
+        transition: 0.4s;
     }
 
     .nav__list {
@@ -179,6 +210,7 @@ body.dark-theme {
 .home {
     background-color: var(--bg-color);
     overflow: hidden;
+    transition: 0.4s;
 }
 
 .home__container {
@@ -290,6 +322,7 @@ body.dark-theme {
 .collection {
     background-color: var(--bg-color-light);
     overflow: hidden;
+    transition: 0.4s;
 }
 
 .collection__container {
