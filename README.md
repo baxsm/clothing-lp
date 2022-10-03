@@ -1,2 +1,3 @@
-# clothing-lp
- Clothing Landing Page
+# Clothing Landing Page
+
+Live : https://baxsm.github.io/clothing-lp/
